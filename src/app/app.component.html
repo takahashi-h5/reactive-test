@@ -1,0 +1,8 @@
+<form [formGroup]="formData" (submit)="search(x.value)">
+  <label for="search">Name</label>
+  <input id="search" type="text" #x formControlName="search">
+  <br>
+  <button type="submit">search now!</button>
+</form>
+<app-human *ngFor="let xx of filterData" [humanList]="xx">
+</app-human>
